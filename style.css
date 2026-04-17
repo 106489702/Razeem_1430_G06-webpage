@@ -82,14 +82,13 @@ header {
 }
 
 #media1 {
-  border: 5em;
-  border-color: #000000;
-  border-radius: 6px;
+  border: 2px solid #000000;
+  border-radius: 3px;
 }
 
 #servicesTable {
   display: flex;
-  border: 4px #000000;
+  border: 2px solid #000000;
   margin-right: 100px;
   background-color: whitesmoke;
 }
