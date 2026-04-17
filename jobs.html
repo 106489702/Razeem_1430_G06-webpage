@@ -15,15 +15,28 @@
 <body>
   
 <header>
-    <h1>Job Positions</h1>
+
+        <div class="branding">
+            <!-- Logo was created through use of GenAI -->
+            <img src="./Images/Logo.png" alt="Kwnd Creative Logo" width="400px" id="logo">
+            <h1 id="slogan">Job Positions</h1>
+        </div>
+
     <!--common navbar-->
-      <nav>
-         <a id="navBar" href="index.html">Home</a>
-         <a id="navBar" href="about.html">About</a>
-         <a id="navBar" href="jobs.html">Jobs</a>
-         <a id="navBar" href="apply.html">Join Us</a>
-      </nav>
-</header>
+    <nav>
+        <a id="navBar" href="index.html">Home</a>
+        <a id="navBar" href="about.html">About</a>
+        <a id="navBar" href="jobs.html">Jobs</a>
+        <a id="navBar" href="apply.html">Join Us</a>
+    </nav>
+
+  <form id="searchForm" action="/search" method="get">
+    <label for="site-search" id="search-label">Search the site:</label>
+    <input type="search" id="site-search" placeholder="Search..."> 
+    <button type="submit">Search</button>
+  </form>
+
+    </header>
  
 <main>
 

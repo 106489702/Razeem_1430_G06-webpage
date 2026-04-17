@@ -54,6 +54,13 @@ header {
   background-color: aliceblue;
 }
 
+#search-label {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.783);
+  margin-right: 8px;
+}
+
 #searchForm {
   float: right;
   margin-top: 8px;
@@ -75,21 +82,20 @@ header {
 }
 
 #media1 {
-  border: 5em;
-  border-color: #000000;
-  border-radius: 6px;
+  border: 2px solid #000000;
+  border-radius: 3px;
 }
 
 #servicesTable {
   display: flex;
-  border: 4px #000000;
+  border: 2px solid #000000;
   margin-right: 100px;
   background-color: whitesmoke;
 }
 
 #servicesTable th {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    font-weight: bold;
   background-color: lightgrey;
 }
 
