@@ -75,7 +75,7 @@ header {
 }
 
 #media1 {
-  border: 5em;
+  border: 4px solid #000000;
   border-color: #000000;
   border-radius: 6px;
 }
