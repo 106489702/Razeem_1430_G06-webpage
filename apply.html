@@ -6,12 +6,15 @@
     <meta name="keywords" content="Apply, Job Application, Front-End Developer, Designer, Creative Agency, KWND Creative">
     <meta name="author" content="G06">
     <title>Apply | KWND Creative</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>Join KWND Creative</h1>
+        <div class="branding">
+            <img src="./Images/Logo.png" alt="Kwnd Creative Logo" id="logo">
+            <h1 id="slogan">Find your opportunities to join us!</h1>
+        </div>
 
         <nav>
             <a id="navBar" href="index.html">Home</a>
@@ -22,155 +25,177 @@
     </header>
 
     <main>
-        <h2>Job Application Form</h2>
-        <p>Please complete all required fields below to apply for a position with KWND Creative.</p>
-
-        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" novalidate="novalidate">
-            
+        <section class="formIntro">
+            <h2>Apply to Join KWND Creative</h2>
             <p>
-                <label for="jobRef">Job Reference Number:</label><br>
-                <input type="text" id="jobRef" name="jobRef" required
-                    pattern="[A-Za-z0-9]{5}"
-                    maxlength="5"
-                    size="20"
-                    title="Exactly 5 alphanumeric characters">
+                We are looking for creative and motivated applicants who are interested in
+                front-end development, branding, and digital content production.
+                Complete the form below to apply for one of our current opportunities.
             </p>
+        </section>
 
-            <p>
-                <label for="firstName">First Name:</label><br>
-                <input type="text" id="firstName" name="firstName" required
-                    pattern="[A-Za-z]{1,20}"
-                    maxlength="20"
-                    size="20"
-                    title="Maximum 20 alphabetic characters only">
-            </p>
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="applicationForm">
+            <fieldset>
+                <legend>Personal Details</legend>
 
-            <p>
-                <label for="lastName">Last Name:</label><br>
-                <input type="text" id="lastName" name="lastName" required
-                    pattern="[A-Za-z]{1,20}"
-                    maxlength="20"
-                    size="20"
-                    title="Maximum 20 alphabetic characters only">
-            </p>
+                <p>
+                    <label for="jobRef">Job Reference Number</label>
+                    <input type="text" id="jobRef" name="jobRef" required
+                        pattern="[A-Za-z0-9]{5}" maxlength="5"
+                        placeholder="e.g. ABC01"
+                        title="Exactly 5 alphanumeric characters">
+                </p>
 
-            <p>
-                <label for="dob">Date of Birth:</label><br>
-                <input type="text" id="dob" name="dob" required
-                    pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"
-                    placeholder="dd/mm/yyyy"
-                    size="20"
-                    title="Format must be dd/mm/yyyy">
-            </p>
+                <p>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required
+                        pattern="[A-Za-z]{1,20}" maxlength="20"
+                        title="Maximum 20 alphabetic characters">
+                </p>
+
+                <p>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required
+                        pattern="[A-Za-z]{1,20}" maxlength="20"
+                        title="Maximum 20 alphabetic characters">
+                </p>
+
+                <p>
+                    <label for="dob">Date of Birth</label>
+                    <input type="text" id="dob" name="dob" required
+                        pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"
+                        placeholder="dd/mm/yyyy"
+                        title="Format must be dd/mm/yyyy">
+                </p>
+
+                <fieldset class="inlineFieldset">
+                    <legend>Gender</legend>
+
+                    <label for="male" class="radioLabel">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        Male
+                    </label>
+
+                    <label for="female" class="radioLabel">
+                        <input type="radio" id="female" name="gender" value="Female">
+                        Female
+                    </label>
+
+                    <label for="other" class="radioLabel">
+                        <input type="radio" id="other" name="gender" value="Other">
+                        Other
+                    </label>
+                </fieldset>
+            </fieldset>
 
             <fieldset>
-                <legend>Gender</legend>
+                <legend>Address Details</legend>
+
                 <p>
-                    <input type="radio" id="male" name="gender" value="Male" required>
-                    <label for="male">Male</label>
+                    <label for="streetAddress">Street Address</label>
+                    <input type="text" id="streetAddress" name="streetAddress" required
+                        maxlength="40" title="Maximum 40 characters">
+                </p>
 
-                    <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label>
+                <p>
+                    <label for="suburbTown">Suburb/Town</label>
+                    <input type="text" id="suburbTown" name="suburbTown" required
+                        maxlength="40" title="Maximum 40 characters">
+                </p>
 
-                    <input type="radio" id="other" name="gender" value="Other">
-                    <label for="other">Other</label>
+                <p>
+                    <label for="state">State</label>
+                    <select id="state" name="state" required>
+                        <option value="">Please Select</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="postcode">Postcode</label>
+                    <input type="text" id="postcode" name="postcode" required
+                        pattern="[0-9]{4}" maxlength="4"
+                        title="Exactly 4 digits">
                 </p>
             </fieldset>
 
-            <p>
-                <label for="streetAddress">Street Address:</label><br>
-                <input type="text" id="streetAddress" name="streetAddress" required
-                    maxlength="40"
-                    size="40"
-                    title="Maximum 40 characters">
-            </p>
+            <fieldset>
+                <legend>Contact Details</legend>
 
-            <p>
-                <label for="suburbTown">Suburb/Town:</label><br>
-                <input type="text" id="suburbTown" name="suburbTown" required
-                    maxlength="40"
-                    size="40"
-                    title="Maximum 40 characters">
-            </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required
+                        placeholder="example@email.com">
+                </p>
 
-            <p>
-                <label for="state">State:</label><br>
-                <select id="state" name="state" required>
-                    <option value="">Please Select</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="NT">NT</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                </select>
-            </p>
-
-            <p>
-                <label for="postcode">Postcode:</label><br>
-                <input type="text" id="postcode" name="postcode" required
-                    pattern="[0-9]{4}"
-                    maxlength="4"
-                    size="10"
-                    title="Exactly 4 digits">
-            </p>
-
-            <p>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required size="30">
-            </p>
-
-            <p>
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone" required
-                    pattern="[0-9]{8,12}"
-                    maxlength="12"
-                    size="20"
-                    title="Phone number must be between 8 and 12 digits">
-            </p>
+                <p>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required
+                        pattern="[0-9]{8,12}" maxlength="12"
+                        placeholder="8 to 12 digits"
+                        title="Phone number must be 8 to 12 digits">
+                </p>
+            </fieldset>
 
             <fieldset>
-                <legend>Skill List</legend>
-                <p>
-                    <input type="checkbox" id="html" name="skills[]" value="HTML" required>
-                    <label for="html">HTML</label>
-                </p>
-                <p>
+                <legend>Skills</legend>
+                <p class="formHint">Select at least one relevant skill.</p>
+
+                <label for="html" class="checkLabel">
+                    <input type="checkbox" id="html" name="skills[]" value="HTML">
+                    HTML
+                </label>
+
+                <label for="css" class="checkLabel">
                     <input type="checkbox" id="css" name="skills[]" value="CSS">
-                    <label for="css">CSS</label>
-                </p>
-                <p>
+                    CSS
+                </label>
+
+                <label for="javascript" class="checkLabel">
                     <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
-                    <label for="javascript">JavaScript</label>
-                </p>
-                <p>
+                    JavaScript
+                </label>
+
+                <label for="figma" class="checkLabel">
                     <input type="checkbox" id="figma" name="skills[]" value="Figma">
-                    <label for="figma">Figma</label>
-                </p>
-                <p>
+                    Figma
+                </label>
+
+                <label for="branding" class="checkLabel">
                     <input type="checkbox" id="branding" name="skills[]" value="Branding">
-                    <label for="branding">Branding</label>
-                </p>
-                <p>
+                    Branding
+                </label>
+
+                <label for="contentCreation" class="checkLabel">
                     <input type="checkbox" id="contentCreation" name="skills[]" value="Content Creation">
-                    <label for="contentCreation">Content Creation</label>
+                    Content Creation
+                </label>
+
+                <p>
+                    <label for="otherSkills">Other Skills</label>
+                    <textarea id="otherSkills" name="otherSkills" rows="6" cols="40"
+                        placeholder="List any other relevant skills, experience, or software knowledge here."></textarea>
                 </p>
             </fieldset>
 
-            <p>
-                <label for="otherSkills">Other Skills:</label><br>
-                <textarea id="otherSkills" name="otherSkills" rows="6" cols="50" placeholder="Enter any other relevant skills here..."></textarea>
-            </p>
-
-            <p>
-                <input type="submit" value="Apply">
+            <div class="formButtons">
+                <input type="submit" value="Submit Application">
                 <input type="reset" value="Reset Form">
-            </p>
-
+            </div>
         </form>
     </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 KWND Creative</p>
+        <a href="https://github.com/106489702/Razeem_1430_G06-webpage">GitHub Repository</a>
+        <a href="mailto:info@kwndcreate.com" target="_blank">Contact Us</a>
+    </footer>
 </body>
 </html>
-
