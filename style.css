@@ -233,3 +233,7 @@ main {
 .formButtons input[type="reset"]:hover {
   background-color: aliceblue;
 }
+
+#requirements {
+  color: red;
+}
