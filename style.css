@@ -31,18 +31,18 @@ header {
   font-weight: bold;
   color: rgb(18, 0, 10);
   border: 4px solid #000000;
-  background-color: white;
+  background-color: #ffffff;
   display: inline-block;
   width: fit-content;
 }
 
 #navBar {
   border: 4px solid #000000;
-  background-color: white;
+  background-color: #ffffff;
   padding: 4px 8px;
   margin: 0px 4px;
   text-decoration: none;
-  color: black;
+  color: #000000;
   float: left;
   position: relative;
   top: -30px;
@@ -50,8 +50,8 @@ header {
 
 #navBar:hover {
   text-decoration: underline;
-  color: rgb(6, 20, 218);
-  background-color: aliceblue;
+  color: #0614da;
+  background-color: #f0f8ff;
 }
 
 #searchForm {
@@ -84,13 +84,13 @@ header {
   display: flex;
   border: 4px #000000;
   margin-right: 100px;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 #servicesTable th {
   font-family: 'Lucida Sans', 'Lucida Sans Regular';
   font-weight: bold;
-  background-color: lightgrey;
+  background-color: #d3d3d3;
 }
 
 #classTimesHeading{
@@ -128,11 +128,16 @@ figure {
 }
 
 #groupPhoto {
-  width: 50%;
-  max-width: 1800px;
-  border: 4px solid #000000;
-  border-color: #000000;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  border: 4px solid #000;
   border-radius: 6px;
+}
+
+#groupCaption {
+  text-align: center;
+  color: #333333;
 }
 
 .membersList {
@@ -204,17 +209,17 @@ td:first-child {
 
 #hobbyTable {
   border: 4px #000000;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
 #hobbyTable th {
   font-family: 'Lucida Sans', 'Lucida Sans Regular';
-  background-color: lightgrey;
+  background-color: #d3d3d3;
 }
 
 #hobbyTable tr:not(:first-child) td:first-child {
   font-family: 'Lucida Sans', 'Lucida Sans Regular';
-  background-color: lightgrey;
+  background-color: #d3d3d3;
 }
 
 aside {
@@ -245,7 +250,7 @@ main {
   margin: 30px auto;
   padding: 25px;
   border: 2px solid #000000;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   border-radius: 6px;
 }
 
@@ -312,7 +317,7 @@ main {
 
 .formButtons input[type="submit"],
 .formButtons input[type="reset"] {
-  background-color: white;
+  background-color: #ffffff;
   border: 2px solid #000000;
   padding: 10px 18px;
   margin: 0 8px;
@@ -322,11 +327,11 @@ main {
 
 .formButtons input[type="submit"]:hover,
 .formButtons input[type="reset"]:hover {
-  background-color: aliceblue;
+  background-color: #f0f8ff;
 }
 
 #requirements {
-  color: red;
+  color: #ff0000;
 }
 
 body {
@@ -390,7 +395,7 @@ body {
 
 .idDescription {
   font-size: 12px;
-  color: #333;
+  color: #333333;
   margin-top: 3px;
 }
 
@@ -438,4 +443,3 @@ body {
 #funFactsHeading{
   padding-bottom: 5px;
 }
-
