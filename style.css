@@ -107,6 +107,39 @@ footer {
   margin: 0px 4px;
 }
 
+.headingCenter{
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.meetOurMembers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 250px;
+}
+
+#groupPhoto {
+  width: 55%;
+  max-width: 900px;
+}
+
+.membersList {
+  width: 35%;
+  align-self: flex-start;
+}
+
+.listHeading {
+  font-size: 20px;
+  list-style: none;
+}
+
+.dashlessList {
+  list-style: none;
+  padding-left: 5px;
+}
+
 /* Table Styles */
 
 /* Table */
@@ -131,7 +164,6 @@ td:first-child {
   text-align: right;
 }
 
-
 aside {
   float: right;
   width: 25%;
@@ -143,4 +175,3 @@ aside {
 section {
   margin-bottom: 30px;
 }
-

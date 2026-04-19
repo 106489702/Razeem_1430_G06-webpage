@@ -16,7 +16,7 @@
       <div class="branding">
             <!-- Logo was created through use of GenAI -->
             <img src="./Images/Logo.png" alt="Kwnd Creative Logo" width="400px" id="logo">
-            <h1 id="slogan">Capturing Your Vision Online</h1>
+            <h1 id="slogan">About KWND Creative</h1>
       </div>
 
       <!--common navbar-->
@@ -28,13 +28,14 @@
       </nav>
       
       <form id="searchForm" action="/search" method="get">
+        <label for="site-search" id="search-label">Search the site:</label>
         <input type="search" id="site-search" placeholder="Search..."> 
         <button type="submit">Search</button>
       </form>
     </header>
 
     <main>
-        <h2>Class Times</h2>
+        <h2 class="headingCenter">Class Times</h2>
         <ul>
           <li><strong>Monday</strong>
             <ul>
@@ -48,10 +49,38 @@
           </li>
         </ul>
 
-        <h2>Meet our Members</h2>
-        <!--Must Insert Group Photo-->
+        <h2 class="headingCenter">Meet our Members</h2>
+        <ul class="meetOurMembers">
+          <img id="groupPhoto" src="./Images/GroupPhoto.png" alt="Image of group members Duy, Kerrigan, Will and Nguyen" width="600px">
 
-        <h2>Quotes</h2>
+            <ul class="membersList">
+              <li class="listHeading"><strong>Quotes</strong></li>
+              <li class="dashlessList"><strong>Kerrigan</strong>
+                <ul class="dashlessList">
+                  <li><em></em></li> <!--Different Laguage-->
+                  <li><em></em></li> <!--English Laguage-->
+                </ul>
+              </li>
+              <li class="dashlessList"><strong>Will</strong>
+                <ul class="dashlessList">
+                  <li><em></em></li> <!--Different Laguage-->
+                  <li><em></em></li> <!--English Laguage-->
+                </ul>
+              </li>
+              <li class="dashlessList"><strong>Duy</strong>
+                <ul class="dashlessList">
+                  <li><em></em></li> <!--Different Laguage-->
+                  <li><em></em></li> <!--English Laguage-->
+                </ul>
+              </li>
+              <li class="dashlessList"><strong>Nguyen</strong>
+                <ul class="dashlessList">
+                  <li><em></em></li> <!--Different Laguage-->
+                  <li><em></em></li> <!--English Laguage-->
+                </ul>
+              </li>
+            </ul>
+        </div>
 
         <h2>Contributions</h2>
         
@@ -94,5 +123,8 @@
             </tr>
           </table>
     </main>
+
+    <footer>
+    </footer>
   </body>
 </html>
