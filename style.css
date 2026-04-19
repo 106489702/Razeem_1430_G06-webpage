@@ -192,6 +192,25 @@ td:first-child {
   text-align: right;
 }
 
+.hobbyTable {
+  margin: auto;
+}
+
+#hobbyTable {
+  border: 4px #000000;
+  background-color: whitesmoke;
+}
+
+#hobbyTable th {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  background-color: lightgrey;
+}
+
+#hobbyTable tr:not(:first-child) td:first-child {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular';
+  background-color: lightgrey;
+}
+
 aside {
   float: right;
   width: 25%;
