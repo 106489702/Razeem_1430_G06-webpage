@@ -113,9 +113,14 @@ footer {
 
 .meetOurMembers {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 10px 150px;
+}
+
+figure {
+  margin: 0;
+  flex: 0 0 50%;
 }
 
 #meetOurMembersHeading {
@@ -124,14 +129,15 @@ footer {
 
 #groupPhoto {
   width: 50%;
-  max-width: 600px;
+  max-width: 1800px;
   border: 4px solid #000000;
   border-color: #000000;
   border-radius: 6px;
 }
 
 .membersList {
-  width: 50%;
+  flex: 1;
+  width: auto;
   align-self: flex-start;
 }
 
