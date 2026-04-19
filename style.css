@@ -93,6 +93,10 @@ header {
   background-color: lightgrey;
 }
 
+#classTimesHeading{
+  padding-bottom: 12px;
+}
+
 footer {
   border-top-style: double;
   border-top-width: 4px;
@@ -112,6 +116,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 10px 150px;
+}
+
+#meetOurMembersHeading {
+  padding-top: 12px;
 }
 
 #groupPhoto {
