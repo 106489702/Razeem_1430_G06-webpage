@@ -326,3 +326,73 @@ main {
 body {
   background-color: #FDFCFA;
 }
+
+/* ID Card */
+
+#studentIdsHeading {
+  padding-top: 20px;
+}
+
+.idCard {
+  width: 320px;
+  border: 3px solid #060606;
+  background: #ffffff;
+  padding: 15px;
+  transition: 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.idCard:hover {
+  border-color: #DC2E27;
+  transform: scale(1.08);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.cardLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.studentPhoto {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.idName {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.idDescription {
+  font-size: 12px;
+  color: #333;
+  margin-top: 3px;
+}
+
+.swinLogo {
+  width: 100px;
+  height: 50px;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.idNumber {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
