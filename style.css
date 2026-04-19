@@ -328,9 +328,17 @@ body {
 }
 
 /* ID Card */
+/* AI assistance with .id container class */
 
 #studentIdsHeading {
   padding-top: 20px;
+}
+
+.idContainer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
 
 .idCard {
