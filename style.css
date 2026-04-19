@@ -403,3 +403,33 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+.contributionDefList {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateX(-16px);
+}
+
+.contDLItem {
+  margin: 0;
+  padding: 0;
+  transform: translateX(16px);
+}
+
+.boldDT {
+  font-weight: bold;
+}
+
+.padDT {
+  padding-top: 10px;
+}
+
+.bottomPaddingDL {
+  padding-bottom: 20px;
+}
+
+#funFactsHeading{
+  padding-bottom: 5px;
+}
+
