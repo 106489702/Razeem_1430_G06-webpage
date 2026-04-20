@@ -1,7 +1,7 @@
 header {
   /* Background image from Gemini */
-  background-image: url("./Images/BannerBack.webp");
-  background-size: fill;
+  background-image: url("Images/BannerBack.webp");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 4px double #000000;
@@ -11,7 +11,7 @@ header {
 
 body {
   /* Background image from Gemini */
-  background-image: url('./Images/Backdrop.webp');
+  background-image: url('Images/Backdrop.webp');
   background-repeat: repeat-x;
   background-repeat: repeat-y;
 }
