@@ -454,3 +454,17 @@ body {
 #funFactsHeading{
   padding-bottom: 5px;
 }
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
