@@ -28,82 +28,75 @@
         <section class="formIntro">
             <h2>Apply to Join KWND Creative</h2>
             <p>
-                We are looking for creative and motivated applicants who are interested in
+                We are looking for creative and motivated applicants interested in
                 front-end development, branding, and digital content production.
-                Complete the form below to apply for one of our current opportunities.
             </p>
         </section>
 
         <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" id="applicationForm">
-            <fieldset>
-                <legend>Personal Details</legend>
 
-                <p>
+            <div class="formGrid">
+
+                <!-- Job Ref -->
+                <div class="formRow">
                     <label for="jobRef">Job Reference Number</label>
                     <input type="text" id="jobRef" name="jobRef" required
                         pattern="[A-Za-z0-9]{5}" maxlength="5"
-                        placeholder="e.g. ABC01"
+                        placeholder="ABC01"
                         title="Exactly 5 alphanumeric characters">
-                </p>
+                </div>
 
-                <p>
+                <!-- First Name -->
+                <div class="formRow">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" name="firstName" required
-                        pattern="[A-Za-z]{1,20}" maxlength="20"
-                        title="Maximum 20 alphabetic characters">
-                </p>
+                        pattern="[A-Za-z]{1,20}" maxlength="20">
+                </div>
 
-                <p>
+                <!-- Last Name -->
+                <div class="formRow">
                     <label for="lastName">Last Name</label>
                     <input type="text" id="lastName" name="lastName" required
-                        pattern="[A-Za-z]{1,20}" maxlength="20"
-                        title="Maximum 20 alphabetic characters">
-                </p>
+                        pattern="[A-Za-z]{1,20}" maxlength="20">
+                </div>
 
-                <p>
+                <!-- DOB -->
+                <div class="formRow">
                     <label for="dob">Date of Birth</label>
                     <input type="text" id="dob" name="dob" required
                         pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"
-                        placeholder="dd/mm/yyyy"
-                        title="Format must be dd/mm/yyyy">
-                </p>
+                        placeholder="dd/mm/yyyy">
+                </div>
 
-                <fieldset class="inlineFieldset">
+                <!-- Gender -->
+                <fieldset class="fullWidth inlineFieldset">
                     <legend>Gender</legend>
 
-                    <label for="male" class="radioLabel">
-                        <input type="radio" id="male" name="gender" value="Male" required>
-                        Male
+                    <label class="radioLabel">
+                        <input type="radio" name="gender" value="Male" required> Male
                     </label>
 
-                    <label for="female" class="radioLabel">
-                        <input type="radio" id="female" name="gender" value="Female">
-                        Female
+                    <label class="radioLabel">
+                        <input type="radio" name="gender" value="Female"> Female
                     </label>
 
-                    <label for="other" class="radioLabel">
-                        <input type="radio" id="other" name="gender" value="Other">
-                        Other
+                    <label class="radioLabel">
+                        <input type="radio" name="gender" value="Other"> Other
                     </label>
                 </fieldset>
-            </fieldset>
 
-            <fieldset>
-                <legend>Address Details</legend>
-
-                <p>
+                <!-- Address -->
+                <div class="formRow fullWidth">
                     <label for="streetAddress">Street Address</label>
-                    <input type="text" id="streetAddress" name="streetAddress" required
-                        maxlength="40" title="Maximum 40 characters">
-                </p>
+                    <input type="text" id="streetAddress" name="streetAddress" required maxlength="40">
+                </div>
 
-                <p>
+                <div class="formRow">
                     <label for="suburbTown">Suburb/Town</label>
-                    <input type="text" id="suburbTown" name="suburbTown" required
-                        maxlength="40" title="Maximum 40 characters">
-                </p>
+                    <input type="text" id="suburbTown" name="suburbTown" required maxlength="40">
+                </div>
 
-                <p>
+                <div class="formRow">
                     <label for="state">State</label>
                     <select id="state" name="state" required>
                         <option value="">Please Select</option>
@@ -116,78 +109,68 @@
                         <option value="TAS">TAS</option>
                         <option value="ACT">ACT</option>
                     </select>
-                </p>
+                </div>
 
-                <p>
+                <div class="formRow">
                     <label for="postcode">Postcode</label>
                     <input type="text" id="postcode" name="postcode" required
-                        pattern="[0-9]{4}" maxlength="4"
-                        title="Exactly 4 digits">
-                </p>
-            </fieldset>
+                        pattern="[0-9]{4}" maxlength="4">
+                </div>
 
-            <fieldset>
-                <legend>Contact Details</legend>
-
-                <p>
+                <!-- Contact -->
+                <div class="formRow">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required
-                        placeholder="example@email.com">
-                </p>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-                <p>
+                <div class="formRow">
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" required
-                        pattern="[0-9]{8,12}" maxlength="12"
-                        placeholder="8 to 12 digits"
-                        title="Phone number must be 8 to 12 digits">
-                </p>
-            </fieldset>
+                        pattern="[0-9]{8,12}" maxlength="12">
+                </div>
 
-            <fieldset>
-                <legend>Skills</legend>
-                <p class="formHint">Select at least one relevant skill.</p>
+                <!-- Skills -->
+                <fieldset class="fullWidth">
+                    <legend>Skills</legend>
+                    <p class="formHint">Select at least one relevant skill.</p>
 
-                <label for="html" class="checkLabel">
-                    <input type="checkbox" id="html" name="skills[]" value="HTML">
-                    HTML
-                </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="skills[]" value="HTML"> HTML
+                    </label>
 
-                <label for="css" class="checkLabel">
-                    <input type="checkbox" id="css" name="skills[]" value="CSS">
-                    CSS
-                </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="skills[]" value="CSS"> CSS
+                    </label>
 
-                <label for="javascript" class="checkLabel">
-                    <input type="checkbox" id="javascript" name="skills[]" value="JavaScript">
-                    JavaScript
-                </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="skills[]" value="JavaScript"> JavaScript
+                    </label>
 
-                <label for="figma" class="checkLabel">
-                    <input type="checkbox" id="figma" name="skills[]" value="Figma">
-                    Figma
-                </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="skills[]" value="Figma"> Figma
+                    </label>
 
-                <label for="branding" class="checkLabel">
-                    <input type="checkbox" id="branding" name="skills[]" value="Branding">
-                    Branding
-                </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="skills[]" value="Branding"> Branding
+                    </label>
 
-                <label for="contentCreation" class="checkLabel">
-                    <input type="checkbox" id="contentCreation" name="skills[]" value="Content Creation">
-                    Content Creation
-                </label>
+                    <label class="checkLabel">
+                        <input type="checkbox" name="skills[]" value="Content Creation"> Content Creation
+                    </label>
+                </fieldset>
 
-                <p>
+                <!-- Other Skills -->
+                <div class="formRow fullWidth">
                     <label for="otherSkills">Other Skills</label>
-                    <textarea id="otherSkills" name="otherSkills" rows="6" cols="40"
-                        placeholder="List any other relevant skills, experience, or software knowledge here."></textarea>
-                </p>
-            </fieldset>
+                    <textarea id="otherSkills" name="otherSkills" rows="6"></textarea>
+                </div>
 
-            <div class="formButtons">
-                <input type="submit" value="Submit Application">
-                <input type="reset" value="Reset Form">
+                <!-- Buttons -->
+                <div class="formButtons fullWidth">
+                    <input type="submit" value="Submit Application">
+                    <input type="reset" value="Reset Form">
+                </div>
+
             </div>
         </form>
     </main>
@@ -195,8 +178,8 @@
     <footer>
         <p>Copyright &copy; 2025 KWND Creative</p>
         <a href="https://github.com/106489702/Razeem_1430_G06-webpage">GitHub Repository</a>
-        <a href="https://razzeenfri1430g06.atlassian.net/jira/software/projects/SCRUM/boards/1?jql=assignee%20IN%20%28712020%3Aefb8f835-5e17-4fd4-8054-2840caf137c2%2C%20712020%3Ab61717f1-9a04-4add-aaa1-8c70e04797a8%29">Jira Board</a>
-        <a href="mailto:info@kwndcreate.com" target="_blank">Contact Us</a>
+        <a href="https://razzeenfri1430g06.atlassian.net/">Jira Board</a>
+        <a href="mailto:info@kwndcreate.com">Contact Us</a>
     </footer>
 </body>
 </html>
