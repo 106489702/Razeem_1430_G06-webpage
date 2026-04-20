@@ -261,7 +261,7 @@ main {
   margin: 30px auto;
   padding: 25px;
   border: 2px solid #000000;
-  background-color: #hsla(0, 9%, 75%, 0.815);
+  background-color: hsla(0, 9%, 75%, 0.815);
   border-radius: 6px;
 }
 
