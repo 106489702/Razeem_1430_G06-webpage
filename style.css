@@ -11,7 +11,7 @@ header {
 
 body {
   /* Background image from Gemini */
-  background-image: url('images/Backdrop.webp');
+  background-image: url('./Images/Backdrop.webp');
   background-repeat: repeat-x;
   background-repeat: repeat-y;
 }
